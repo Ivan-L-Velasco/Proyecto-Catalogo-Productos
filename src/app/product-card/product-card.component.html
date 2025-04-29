@@ -1,0 +1,14 @@
+<mat-card (click)="viewProductDetails()">
+  <mat-card-header>
+    <mat-card-title>{{ product.title }}</mat-card-title>
+    <mat-card-subtitle>{{ product.price }}</mat-card-subtitle>
+  </mat-card-header>
+  <!-- Aquí agregamos la imagen del producto -->
+  <mat-card-content>
+    <img [src]="product.image" alt="{{ product.title }}" class="product-image" loading="lazy">
+    <p>{{ product.description }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="addToCart($event)">Agregar al carrito</button>
+  </mat-card-actions>
+</mat-card>

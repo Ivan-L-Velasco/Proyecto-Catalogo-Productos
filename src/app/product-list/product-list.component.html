@@ -1,0 +1,24 @@
+<h2>Lista de Productos</h2>
+
+<!-- Formulario de Búsqueda -->
+<div>
+  <mat-form-field appearance="fill">
+    <mat-label>Buscar Producto</mat-label>
+    <input matInput [(ngModel)]="searchQuery" placeholder="Nombre o Categoría" (input)="filterProducts()">
+  </mat-form-field>
+  <!-- Mensaje de error -->
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+</div>
+
+<!-- Lista de Productos -->
+<div class="product-list">
+  <div class="product-item" *ngFor="let producto of paginatedProducts">
+    <app-product-card [product]="producto" (addProduct)="handleAddProduct($event)"></app-product-card>
+  </div>
+</div>
+
+<!-- Estado del Carrito -->
+<div class="cart-status">Carrito: {{ cartItems.join(', ') }}</div>
+
+<!-- Paginación -->
+<mat-paginator [length]="filteredProducts.length" [pageSize]="10" [pageSizeOptions]="[5, 10, 25]" (page)="onPageChange($event)"></mat-paginator>
