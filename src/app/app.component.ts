@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+<<<<<<< HEAD
 import { ProductListComponent } from './product-list/product-list.component';
 import { CartService } from './cart.service';
 
@@ -24,4 +25,15 @@ export class AppComponent {
       this.cartItemCount = count;
     });
   }
+=======
+
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  title = 'catalogo-productos';
+>>>>>>> origin/dev
 }

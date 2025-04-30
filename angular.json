@@ -27,7 +27,10 @@
               }
             ],
             "styles": [
+<<<<<<< HEAD
               "@angular/material/prebuilt-themes/azure-blue.css",
+=======
+>>>>>>> origin/dev
               "src/styles.css"
             ],
             "scripts": []
@@ -57,9 +60,12 @@
           "defaultConfiguration": "production"
         },
         "serve": {
+<<<<<<< HEAD
           "options": {
       "proxyConfig": "proxy.conf.json"
     },
+=======
+>>>>>>> origin/dev
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
@@ -89,7 +95,10 @@
               }
             ],
             "styles": [
+<<<<<<< HEAD
               "@angular/material/prebuilt-themes/azure-blue.css",
+=======
+>>>>>>> origin/dev
               "src/styles.css"
             ],
             "scripts": []
