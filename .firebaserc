@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "univalle-dip"
-  }
+    "default": "univalle-dip",
+    "staging": "univalle-dip"
+  },
+  "targets": {},
+  "etags": {}
 }
