@@ -1,29 +1,29 @@
-name: Angular CI Build
+# name: Angular CI Build
 
-on:
-  pull_request:
-    branches:
-      - main
-      - dev
+# on:
+#   pull_request:
+#     branches:
+#       - main
+#       - dev
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '16' # Versión de Node.js compatible con Angular
+#     - name: Set up Node.js
+#       uses: actions/setup-node@v3
+#       with:
+#         node-version: '16' # Versión de Node.js compatible con Angular
 
-    - name: Install dependencies
-      run: npm install
+#     - name: Install dependencies
+#       run: npm install
 
-    - name: Build Angular project
-      run: npm run build
+#     - name: Build Angular project
+#       run: npm run build
 
-    - name: Run tests
-      run: npm test
+#     - name: Run tests
+#       run: npm test
