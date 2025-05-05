@@ -1,5 +1,5 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-<<<<<<< HEAD
+
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; import { BrowserModule } from '@angular/platform-browser'; // Asegúrate de importar BrowserModule
 import { HttpClientModule } from '@angular/common/http';
@@ -17,10 +17,4 @@ bootstrapApplication(AppComponent, {
   ]
 })
 .catch(err => console.error(err));
-=======
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
->>>>>>> origin/dev
